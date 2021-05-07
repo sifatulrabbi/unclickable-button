@@ -1,0 +1,64 @@
+body {
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  font-family: roboto;
+
+  --transition-delay: 100;
+}
+
+#evil-button {
+  position: absolute;
+  white-space: nowrap;
+  font-size: 1.3rem;
+  width: 120px;
+  height: 120px;
+  color: white;
+  background-color: rgb(131, 37, 37);
+  border: 5px solid black;
+  border-radius: 50%;
+  outline: none;
+  letter-spacing: 1px;
+  box-shadow: 2px 3px 20px rgba(0, 0, 0, 0.7);
+  transition: calc(var(--transition-delay) * 1ms);
+}
+
+.increase {
+  --transition-delay: 0;
+}
+
+.level-container {
+  margin-left: 1rem;
+  font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.level {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: rgb(131, 37, 37);
+  margin: 0 1rem;
+}
+
+.level-container p {
+  padding: 0;
+  margin: 0.5rem 1rem;
+}
+
+.level-btn1,
+.level-btn2 {
+  margin: 0 0.2rem;
+  padding: 0.2rem;
+  border: 1px slid gray;
+  outline: none;
+  background-color: rgb(223, 220, 0);
+  box-shadow: 1px 1px 1px black;
+}
+
+.level-btn1:hover,
+.level-btn2:hover {
+  background-color: rgb(200, 200, 0);
+}
